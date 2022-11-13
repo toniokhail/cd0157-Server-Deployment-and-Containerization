@@ -12,7 +12,7 @@ Parameters:
     Default: simple-jwt-api
     MinLength: 1
     MaxLength: 100
-    ConstraintDescription: EKS cluster dedicated VPC true dedicated IAM true created and managed by eksctl
+    ConstraintDescription: You must enter the EKS cluster name
 
   GitSourceRepo:
     Type: String
