@@ -6,13 +6,13 @@ Description: EKSWSV1
 
 Parameters:
 
-  EksClusterName:
+  EksClusterName: simple-jwt-api
     Type: String
     Description: The name of the EKS cluster created
     Default: simple-jwt-api
     MinLength: 1
     MaxLength: 100
-    ConstraintDescription: You must enter the EKS cluster name
+    ConstraintDescription: EKS cluster (dedicated VPC: true, dedicated IAM: true) [created and managed by eksctl]
 
   GitSourceRepo:
     Type: String
@@ -40,7 +40,7 @@ Parameters:
 
   GitHubUser:
     Type: String
-    Default: SudKul
+    Default: toniokhail 
     Description: GitHub username or organization
     MinLength: 3
     MaxLength: 100
